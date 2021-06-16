@@ -3,13 +3,9 @@ title: 블로그를 시작하며
 published: true
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
-
-[Link to another page](another-page).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+나는 서른살의 **개발자**이고 이 블로그는 주로 나의 지식들을 담겠지만 
+~~퍼블리싱을 만드는 능력~~ 같은건 없기에 간단하게 **jeykyll**에서 제공하는 테마를 사용하기로 했다.
+형상 관리는 **Git**으로 하겠지만 아마 내가 개발하는 방법과는 많이 달라서 그냥 에디터로쓰는 블로그 같은 느낌으로 받아드리길
 
 # [](#header-1)Header 1
 
