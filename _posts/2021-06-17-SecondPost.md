@@ -95,8 +95,6 @@ end
 
 ### Large image
 
-[Imgur](https://i.imgur.com/lpX9J0f.png)
-
 
 ### Definition lists can be used with HTML syntax.
 
