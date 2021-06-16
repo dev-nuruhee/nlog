@@ -7,8 +7,9 @@ published: true
 
 개발을 하는 사람중에 배열을 모르는 사람은 없을 것이다.<br>
 정보성 글이기에 몇가지 특징과 우리가 알고 있어야할 필요 지식들을 적어보겠음 <br>
-배열은 순차적으로 데이터를 저장하고 인덱스 번호로 접근함
-그렇기에 빠른 접근이 가능하지만, 데이터를 추가하거나 삭제에 있어 비교적 어려워.
+배열은 순차적으로 데이터를 저장하고 인덱스 번호로 접근함<br>
+그렇기에 빠른 접근이 가능하지만, 데이터를 추가하거나 삭제에 있어 비교적 어려워. <br>
+이러한 내용들은 기본이지만, List와 ArrayList의 차이를 알고 있나?<br>
 
 
 ## [](#header-2)Header 2
@@ -91,7 +92,7 @@ end
 
 ### Small image
 
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+![배열](https://drive.google.com/file/d/1_slrxAQH6p1iC3J_AEkcN2fbYCtSnY-D/view?usp=sharing)
 
 ### Large image
 
