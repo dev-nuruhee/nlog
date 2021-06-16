@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Profile
 ---
 
 # [](#header-1)경력
