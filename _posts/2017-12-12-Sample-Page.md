@@ -3,10 +3,7 @@ title: Sample Page
 published: false
 ---
 
-개발을 하는 사람중에 배열을 모르는 사람은 없을 것이다.<br>
-정보성 글이기에 몇가지 특징과 우리가 알고 있어야할 필요 지식들을 적어보겠음 <br>
-배열은 순차적으로 데이터를 저장하고 인덱스 번호로 접근함
-그렇기에 빠른 접근이 가능하지만, 데이터를 추가하거나 삭제에 있어 비교적 어려워.
+골때리네 ㅋㅋ
 
 # [](#header-1)Header 1
 
@@ -92,7 +89,7 @@ end
 
 ### Small image
 
-![Imgur](https://i.imgur.com/lpX9J0f.png)
+
 
 ### Large image
 
