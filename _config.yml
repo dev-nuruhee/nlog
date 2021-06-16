@@ -1,9 +1,9 @@
-title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
+title: Developer-Nlog
+description: "개발자 N의 생활"
 author:
-  name: "SomeHacker"
-  email: "someone@somewebsite.somedomain"
-  url: "https://ashishchaudhary.in/hacker-blog"
+  name: "Nuruhee"
+  email: "nuruhee@gmail.com"
+  url: "https://https://dev-nuruhee.github.io/nlog/"
 
 baseurl: /
 
