@@ -26,7 +26,7 @@ published: true
 1. **List**는 인터페이스임
 
 
-### [](#header-3)Header 3
+### [](#header-3) 세가지를 보면?
 ```java
 ArrayList<Object> list = new ArrayList<>();
 List<Object> list = new ArrayList<>();  
