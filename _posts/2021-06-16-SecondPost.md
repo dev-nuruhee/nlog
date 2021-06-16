@@ -92,7 +92,7 @@ end
 
 ### Small image
 
-![업로드 된 이미지](/assets/Array.png)
+![배열](https://user-images.githubusercontent.com/54430432/122173266-9261f980-cebc-11eb-8a8d-9bb70dd92f3c.PNG)
 
 ### Large image
 
