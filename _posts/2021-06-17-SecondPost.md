@@ -92,7 +92,7 @@ end
 
 ### Small image
 
-![배열](https://drive.google.com/file/d/1_slrxAQH6p1iC3J_AEkcN2fbYCtSnY-D/view?usp=sharing)
+![업로드 된 이미지](/assets/Array.png)
 
 ### Large image
 
