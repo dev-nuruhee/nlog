@@ -1,15 +1,12 @@
 ---
 title: Sample Page
-published: true
+published: false
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
-
-[Link to another page](another-page).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+개발을 하는 사람중에 배열을 모르는 사람은 없을 것이다.<br>
+정보성 글이기에 몇가지 특징과 우리가 알고 있어야할 필요 지식들을 적어보겠음 <br>
+배열은 순차적으로 데이터를 저장하고 인덱스 번호로 접근함
+그렇기에 빠른 접근이 가능하지만, 데이터를 추가하거나 삭제에 있어 비교적 어려워.
 
 # [](#header-1)Header 1
 
@@ -95,7 +92,7 @@ end
 
 ### Small image
 
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+![Imgur](https://i.imgur.com/lpX9J0f.png)
 
 ### Large image
 
