@@ -1,5 +1,5 @@
 ---
-title: Yet Another Sample Page
+title: 블로그를 시작하며
 published: true
 ---
 
