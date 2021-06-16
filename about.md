@@ -9,6 +9,14 @@ title: About
 
 # [](#header-1)보유 기술
 
+| 분야        | 언어          | 이해도 |
+|:-------------|:------------------|:------|
+| Front End | JavaScript | 중  |
+| Front End | Ajax | 중  |
+| Front End | JQuery | 중  |
+| Front End | Scriptlet | 중  |
+| Front End | JSTL | 중  |
+
 # [](#header-1)진행 프로젝트
 
 
