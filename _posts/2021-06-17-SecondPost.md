@@ -92,7 +92,7 @@ end
 
 ### Small image
 
-![업로드 된 이미지](/assets/Array.png)
+![업로드 된 이미지](../assets/Array.png)
 
 ### Large image
 
