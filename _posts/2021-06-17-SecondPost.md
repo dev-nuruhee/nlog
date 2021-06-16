@@ -1,6 +1,6 @@
 ---
 title: 배열
-published: false
+published: true
 ---
 
 # [](#header-1)배열 (Array)
