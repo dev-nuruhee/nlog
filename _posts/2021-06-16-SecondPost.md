@@ -11,7 +11,6 @@ published: true
 그렇기에 빠른 접근이 가능하지만, 데이터를 추가하거나 삭제에 있어 비교적 어려워. <br>
 
 ![배열](https://user-images.githubusercontent.com/54430432/122173266-9261f980-cebc-11eb-8a8d-9bb70dd92f3c.PNG)
-![헬로월드-최종](https://user-images.githubusercontent.com/54430432/122516646-fc5bd980-d049-11eb-97bc-81229f4b1ef2.gif)
 
 ### 출처 : https://dojang.io/mod/page/view.php?id=293 (코딩 도장)
 
