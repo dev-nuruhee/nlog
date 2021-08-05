@@ -1,5 +1,5 @@
 ---
-title: 자료구조 
+title: 알고리즘 
 published: true
 ---
 
