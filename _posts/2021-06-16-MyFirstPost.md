@@ -9,11 +9,15 @@ published: true
 
 # [](#header-1) 그래서 뭘 올릴 예정?
 
-1.  자료구조
-1.  알고리즘
-1.  Spring Framework
-1.  디자인 패턴
-1.	그 외
+1. 자료구조
+2. 알고리즘
+3. Spring Framework
+4. 디자인 패턴
+5. Vue.js
+6. Node.js
+7. ElasticSearch
+8. NPM
+9. GIT
 
 # [](#header-1) 그냥 정보성만 올리는 블로그?
 
