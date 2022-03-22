@@ -1,5 +1,5 @@
 ---
-title: 자료구조 
+title: [Data Structure] Array 
 published: true
 ---
 

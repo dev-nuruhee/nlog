@@ -1,5 +1,5 @@
 ---
-title: 알고리즘 
+title: [Algorithm] Palindrome(팰린드롬)
 published: true
 ---
 
