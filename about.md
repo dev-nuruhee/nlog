@@ -5,7 +5,8 @@ title: Profile
 
 # [](#header-1)경력
 1. 		NHN 다이퀘스트 (검색 솔루션) 2018.03.12 ~ 2020.05.31
-1.      파이언넷 (e-commerce) 2020.09.01 ~ 2021.05.31
+2.      파이언넷 (e-commerce) 2020.09.01 ~ 2021.05.31
+3.      BJ Systems (SI, SM, 유지보수) 2022.08.01 ~ 
 
 # [](#header-1)보유 기술
 
@@ -16,11 +17,14 @@ title: Profile
 | Front End | JQuery | 중  |
 | Front End | Scriptlet | 중  |
 | Front End | JSTL | 중  |
+| Front End | Vue.js | 중  |
 | Back End | JAVA | 중  |
+| Back End | Node.js | 중  |
+| Back End | Spring boot | 중  |
 | DATABASE | Oracle,Tibero,MySQL,MariaDB | 중  |
 | WAS | Tomcat | 중  |
-| SCN | Git, SVN | 하  |
-| OS | linux | 하  |
+| SCN | Git, SVN | 중  |
+| OS | linux | 중  |
 
 # [](#header-1)진행 프로젝트
 
@@ -61,5 +65,12 @@ title: Profile
 *  2020.09~2021.05(9개월) 
 *  해당 프로젝트에서 혜택 메인, 웨딩 프로모션, 주문 완료서, 리뷰 페이지 등
 *  프론트엔드 개발, 백엔드 개발, Git을 사용해 형상관리, MVC, Spring Framework를 사용하여 프로젝트가 진행되었습니다. 프론트엔드 화면은 JQuery, Ajax, JavaScript, Scriptlet 사용하여 개발하였습니다. 백엔드에서는 JAVA를 사용하였고, 데이터 호출은   IBatis를 이용하였습니다. 
-
+1. Chatbot Jilli 개발
+*  2020.08 ~
+1. Chatbot CMS (계약 관리 시스템) 개발
+*  2020.08 ~
+1. O2 CNI 유지보수
+*  2020.08 ~
+1. Townjob 개발
+*  2020.08 ~
 
