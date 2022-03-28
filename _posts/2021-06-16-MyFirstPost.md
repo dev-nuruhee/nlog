@@ -1,5 +1,5 @@
 ---
-title: [Nuruhee] 블로그를 시작하며
+title: Nuruhee - 블로그를 시작하며
 published: true
 ---
 

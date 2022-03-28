@@ -1,5 +1,5 @@
 ---
-title: [Network] 프로토콜의 종류와 특징
+title: Network - 프로토콜의 종류와 특징
 published: true
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: [Data Structure] Array 
+title: Data Structure - Array 
 published: true
 ---
 
