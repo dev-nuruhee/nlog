@@ -23,7 +23,97 @@ published: true
 ![image](https://user-images.githubusercontent.com/54430432/159454197-d1257d7a-c080-4852-bba1-b23d68efe6ec.png)  
 출처 : https://helloworld-88.tistory.com/146
 
-## 1. HTTP(Hyper Text Transfer Protocol)
+## 1. TCP(Transmission Control Protocol)
+네트워크 망에 연결된 컴퓨터의 프로그램 간 데이터를 순서대로 에러없이 교환할 수 있게 하는 프로토콜
+제어의 역할이 강함<br>
+특징으로는 첫번째로 **연결 지향 프로토콜**(Connection Oriented Protocol)이 있다.
+연결 지향 프로토콜은 물리적으로 전용회선이 연결되어 있는 것처럼 가상의 연결통로(가상회선)를 설정하여 통신하는 방식
+이러한 가상회선을 통해 통신할 때 데이터의 전송 순서를 제어한다. 
+데이터 전송방식은 스트림(데이터를 임의의 크기로 나누어 연속해서 전송) 기반의 전송방식을 사용한다.<br>
+두번째로는 **신뢰할 수 있는 프로토콜**(Reliable Protocol)이 있다. <br>
+상대방이 수신 가능한 크기(Window Size) 내에서 데이터를 연속해서 전송하는 방식으로 매 세그먼트(Segmant, 프로그램 내 정의 되어 있는 특정영역) 전송 시마다 수신 확인 응답(ACK)을 수신한 후 전송하게 된다.<br>
+전송하게 되면 왕복시간(RTT)이 길 경우 단위 시간당 데이터 전송 효율이 매우 떨어져 상대방이 받을 수 있는 범위 내에서 연속적으로 전송한다. <br>
+데이터 오류나 누락없이 안전한 전송을 보장하고 이러한 현상들이 발생할 시 재전송을 수행하여 이런 현상을 보정한다. <br>
+데이터의 손실 발생유무로 전송량을 조절한다. 전송 데이터 누락이 발생하면 네트워크가 혼잡한 것으로 판단하여 전송량을 조절한다.<br>
+
+***TCP의 구조*** <br>
+TCP는 기본적으로 Header와 Data로 구성된다.
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile26.uf.tistory.com%2Fimage%2F99D7CE335BD7B0FF1C29FE) <br>
+출처 : https://itragdoll.tistory.com/57
+
+1. 출발지 포트 번호(Source Port / 16bits)
+2. 목적지 포트 번호(Destination Port / 16bits)
+3. 송신 데이터 순서 번호(Sequence Number / 32bits)
+4. 다음 전송 순서 번호 (Acknowledgment Number / 32bits)
+5. 헤더 길이 (HLEN / 4bits)
+6. 예약 (Reserved / 4bits)
+7. 제어 플래그 (Control Flags / 6bits)
+- URG(Urgent pointer is valid) : 긴급 데이터 설정
+- ACK(Acknowledgment is valid) : 수신 확인 응답(ACK) 설정
+- PSH(Request for push) : 송수신 버퍼에 있는 데이터를 즉시 처리
+- RST(Reset the connection) : 연결 중단(강제 종료)
+- SYN(Synchronize sequence numbers) : 연결 설정
+- FIN(Terminate the connection) : 연결 종료 (정상 종료)
+8. 수신 가능 사이즈 (Window Size / 16bits)
+9. 헤더를 포함한 전체 세그먼트에 대한 오류 검사 필드 (Checksum / 16bits)
+10. 세그먼트가 긴급 데이터(URG 플래그)를 포함하고 있는 경우 사용되는 필드 (Urgent Pointer / 16bits)
+
+***연결 과정***
+
+![image](https://user-images.githubusercontent.com/14002238/115411131-2d788300-a22e-11eb-8557-0eb3e42d1096.png)
+출처 : https://dongwooklee96.github.io/post/2021/04/20/tcp-%ED%86%B5%EC%8B%A0%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90....html
+
+1. 클라이언트가 서버에 연결설정(SYN)을 전송한다. <br>클라이언트는 세그먼트의 시퀀스 번호를 임의의 값으로 설정.
+2. 서버는 응답으로 SYN ACK를 응답. 수신된 세그먼트의 번호보다 큰 숫자로 설정됨
+3. 클라이언트가 다시 서버에 수신 확인 응답(ACK) 를 보낸다.
+
+이것을 3 Way Handshake라고 한다.
+
+***연결 해제 과정***
+
+![image](https://user-images.githubusercontent.com/14002238/115411888-d58e4c00-a22e-11eb-82d0-c47393198d7f.png)
+출처 : https://dongwooklee96.github.io/post/2021/04/20/tcp-%ED%86%B5%EC%8B%A0%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90....html
+
+1. 클라이언트가 연결 종료(FIN)를 전송한다.
+2. 서버는 수신 확인 응답(ACK)을 보내고, 연결 종료(FIN)를 한다.
+3. 클라이언트는 다시 수신 확인 응답(ACK)을 보내 과정을 마무리한다.
+
+이것을 4 way Handshake라고 한다.
+
+## 2. IP(Internet Protocol)
+네트워크 주소와 호스트 주소의 정의에 의한 네트워크의 논리적 관리
+초기 컴퓨터의 통신 방식은 회선 교환을 통해 이루어졌다.
+상호 연결이 위해 전용 회선 또는 채널이 필요 했고, 통신하는 동안은 독점하고 있기 때문에 효율적으로 사용하지 못했다.
+이러한 단점을 해결하기 위해 패킷 교환 방식으로 바뀌었다.
+
+***패킷 교환 방식이 뭔데?***
+작은 블록의 패킷으로 데이터를 전송하며 데이터를 전송하는 동안만 네트워크 자원을 사용하도록 하는 방법을 말한다. 정보 전달의 단위인 패킷은 여러 통신 지점(Node)을 연결하는 데이터 연결 상의 모든 노드들 사이에 개별적으로 경로가 제어된다. 이 방식은 통신 기간 동안 독점적인 사용을 위해 두 통신 노드 사이를 연결하는 회선 교환 방식과는 달리 짤막한 데이터 트래픽에 적합하다.
+
+![image](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Packet_Switching.gif/350px-Packet_Switching.gif)
+
+하나의 파일은 작은 크기의 데이터들로 쪼개진다. <br>
+쪼개진 데이터들은 발신지, 목적지 주수 정보를 추가하게 되면 하나의 단일한 패킷이 된다. <br>
+이런 패킷들의 나열은 차레로 목적지까지 보내지고 패킷 나열을 다시 원본 파일로 재구성하는 작업이 이루어진다. <br>
+패킷 단위로 나누기 때문에 회선 효율성이 좋고 트래픽에 따라 요청을 차단하거나 Store-and-Forward 방식을 사용하기 때문에 데이터 들어오는 속도와 나가는 속도를 맞 출 필요가 없다. <br>
+Store-and-Forwart(축적교환방식)은 송수신 상호간에 직접적인 접속경로(회선 점유)를 만들지 않고
+통신 정보를 중간 노드(스위치, 라우터 등) 등의 기억 매체를 활용하여 경유하게 됩니다.
+이에 따라 중계 루트가 처음부터 정해지지 않고 구간별로 중계 루트가 변하는 형태로 상대방에게 전송 됩니다.
+그렇기 때문에 전송 지연이 줄어들고 통신 안정성이 늘어난다. <br>
+
+https://media.vlpt.us/post-images/doondoony/5b36e020-3dc7-11e9-8503-2572238e9a09/KakaoTalkPhoto2019-03-04-00-15-34.png
+출처 : https://velog.io/@doondoony/ip101
+
+여기서 Internet Protocol은 호스트간의 통신만을 담당한다.
+그렇기 때문에 데이터를 보낼 때 받는 사람이 제대로 있는건지(연결), 받는 데이터가 맞는지(신뢰성) 관해서는 고려하지 않는다.
+
+## 3. TCP/IP(Transmission Control Protocol/Internet Protocol)
+인터넷 프로토콜 중 가장 중요한 역할을 하는 TCP와 IP의 합성어로 인터넷 동작의 중심이 되는 통신규약이다.
+데이터 흐름 관리, 데이터의 정확성을 확인하는게 TCP의 역할이고 패킷을 목적지까지 전송하는 것이 IP의 특징!
+IP는 데이터를 한 장소에서 다른 장소로 정확하게 옮겨주고 TCP는 전체 데이터가 잘 전송될 수 있도록 데이터 흐름을 조절한다.
+- 응용계층 : 사용자 응용 프로그램으로부터 요청을 받아 적절한 메세지로 변환하고 하위 계층으로 전달
+- 트랜스포트 계층 : IP에 의해 전달되는 패킷의 오류 검사 및 재전송 요구 등 제어를 담당 (TCP, UDP 두 종류의 프로토콜을 사용)
+
+## 4. HTTP(Hyper Text Transfer Protocol)
 WWW는 문서 기술언어인 **HTML**과 문서 전송 프로토콜 **HTTP** 문서의 주소를 지정하는 **URL**로 구성되었다. <br>
 클라이언트의 요청 메세지에 대해 서버가 응답 메세지로 회신하는 형식 Default 서비스 PORT는 80번!
 
@@ -163,6 +253,8 @@ referer:https://search.shopping.naver.com/search/allquery=%EA%B3%BC%EC%9E%90&cat
 
 7. Set-Cookie : 서버에서 사용자에게 세션 쿠키 정보를 전달한다.
 8. Age : max-age내에서 캐시가 얼마나 지났는지 초 단위로 표현한다.
+
+
 
 
 
