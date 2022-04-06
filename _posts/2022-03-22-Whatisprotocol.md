@@ -254,9 +254,36 @@ referer:https://search.shopping.naver.com/search/allquery=%EA%B3%BC%EC%9E%90&cat
 7. Set-Cookie : 서버에서 사용자에게 세션 쿠키 정보를 전달한다.
 8. Age : max-age내에서 캐시가 얼마나 지났는지 초 단위로 표현한다.
 
+## 5. SMTP(Simple Mail Transfer Protocol)
+인터넷에서 메일을 주고 받기 위한 프로토콜이다.
+기본 포트는 69번을 사용한다.
+연결 설정 단계 -> 연결 완료 -> 데이터 전송 -> 연결 해제의 과정으로 진행된다.
+SMTP 클라이언트가 TCP를 이용해 SMTP 서버와 세션을 설정하고
+연결이 완료 되면 SMTP 서버에 메일을 보낸다.
+메일 전송을 완료하면 TCP연결 해제 후 SMTP가 종료된다.
+
+내가 nuruhee@bjsystems.kr 라는 메일을 가지고 있고, nuruhee@gmail.com에 메일을 보내다고 가정해보자.
+메일 전송을 하게 되면 bjsystems STMP서버에 데이터가 전송이 된다. <br>
+bjsystems SMTP 서버는 gmail 메일 서버 보관함에 저장되고 상대방은 gmail 메일 서버에서 메일을 가져온다.
+
+메일 규격은 RFC 822번으로 규정 되어있고 아래와 같으 구조이다.
+
+```
+Header
+BlankLine
+Body
+```
+
+메일 서버에서 메일을 가져올 땐, SMTP를 사용하지 않는다.
+3가지 옵션 중 한가지 옵션으로 가지고 오는데 옵션들은 아래와 같다.
+1. Post Office Protocol(POP)
+2. Intener Message Access Protocol(IMAP)
+3. HTTP
 
 
-
+## 6. FTP(File Transfer Protocol)
+파일 전송을 위해 사용되는 프로토콜이다.
+기본 포트는 20,21번을 사용하고 20번은 전송시에 21번은 제어시에 사용한다.
 
 
 
