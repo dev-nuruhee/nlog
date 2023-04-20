@@ -12,7 +12,7 @@ destination: ./_site
 permalink: /:title
 paginate: 3
 paginate_path: /page/:num/
-
+google_site_verification: VB1Lz27mnvILLPq9bcx-2aT9HnrW9S3-3vYepM52m1E
 defaults:
   -
     scope:
