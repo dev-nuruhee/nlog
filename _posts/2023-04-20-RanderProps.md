@@ -1,5 +1,5 @@
 ---
-title: React - Rendering part3 리스트와 키
+title: React - Rendering part4 Rander Props
 published: true
 ---
 
