@@ -4,6 +4,19 @@ title: Project
 ---
 
 # [](#header-1)현대백화점 차세대 프로젝트
-1. 		NHN 다이퀘스트 (검색 솔루션) 2018.03.12 ~ 2020.05.31
-2.      파이언넷 (e-commerce) 2020.09.01 ~ 2021.05.31
-3.      BJ Systems (SI, SM, 유지보수) 2022.08.01 ~ 
+1. 프로젝트 목적
+- 현대백화점 차세대 프로젝트로서 약 6개의 온라인 쇼핑몰에서 하나로 통일된 결제 프로그램을 사용할 수 있도록 개발.
+
+2. 개발 기술
+- Vue.js
+- Springboot
+- JWT
+- Mybatis
+- Oracle
+- Maven
+
+3. 담당업무
+- 결제솔루션 로직 설계 및 구현
+- F/E, B/E 모두 개발
+
+![image](https://github.com/dev-nuruhee/nlog/assets/54430432/a9773676-2db8-44a2-8034-000179f83963)
