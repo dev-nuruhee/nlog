@@ -10,8 +10,8 @@ title: Profile
 
 # [](#header-1)보유 기술
 
-| 분야        | 언어          | 이해도 |
-|:-------------|:------------------|:------|
+|분야|언어|이해도|
+|:---|:---|:---:|
 | Frontend | JavaScript | 중  |
 | Frontend | Ajax | 중  |
 | Frontend | JQuery | 중  |
@@ -22,10 +22,10 @@ title: Profile
 | Backend | JAVA | 중  |
 | Backend | Node.js | 중  |
 | Backend | Spring boot | 중  |
-| DATABASE | Oracle,Tibero,MySQL,MariaDB | 중  |
+| Database | Oracle,Tibero,MySQL,MariaDB | 중  |
 | WAS | Tomcat | 중  |
-| SCN | Git, SVN | 중  |
-| OS | linux | 중  |
+| SVN | Git, SVN | 중  |
+| OS | linux, Window | 중  |
 | devOps | Docker | 중  |
 # [](#header-1)진행 프로젝트
 
@@ -74,4 +74,6 @@ title: Profile
 *  2020.08 ~
 1. Townjob 개발
 *  2020.08 ~
+1. 현대백화점 차세대 프로젝트 결제솔루션 개발
+*  2023.05.01 ~ 2023.11.31
 
